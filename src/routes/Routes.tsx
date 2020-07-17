@@ -32,6 +32,7 @@ const Routes = () => {
           name="DetailCharacter"
           component={DetailCharacter}
           options={{
+            title: '',
             headerTintColor: '#fff',
             headerStyle: {
               backgroundColor: Colors.black,

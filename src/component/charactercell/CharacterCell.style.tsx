@@ -1,33 +1,35 @@
-import {StyleSheet} from 'react-native';
+import styled from 'styled-components/native';
 
-export const styles = StyleSheet.create({
-  container: {
-    marginTop: 20,
-    borderRadius: 10,
-    height: 250,
-    width: '100%',
-    backgroundColor: 'rgba(255, 255, 255, 0.3)',
-  },
+export const Container = styled.View`
+  margin-top: 20px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: 'rgba(255, 255, 255, 0.15)';
+  width: 100%;
+`;
 
-  containerElement: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%',
-  },
+export const ContainerElement = styled.View`
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+`;
 
-  image: {
-    marginTop: 20,
-    height: 150,
-    width: '100%',
-  },
+export const ImageCharacter = styled.Image.attrs({
+  // borderColor: '#ffffffff',
+})`
+  margin-left: 15px;
+  border-radius: 50px;
+  border-width: 1px;
+  height: 60px;
+  width: 60px;
+  resize-mode: contain;
+`;
 
-  textName: {
-    textAlign: 'center',
-    fontSize: 18,
-    marginBottom: 10,
-    marginTop: 10,
-    color: 'white',
-  },
-});
+export const TextName = styled.Text`
+  margin-left: 20px;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: #ffffffff;
+`;

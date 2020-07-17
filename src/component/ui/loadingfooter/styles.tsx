@@ -1,11 +1,11 @@
 import styled from 'styled-components/native';
 
 export const Indicator = styled.ActivityIndicator.attrs({
-  color: 'white',
+  color: '#06ba8a',
   size: 'large',
 })`
   margin-top: 5px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 `;
 
 export const ContainerIndicator = styled.View`

@@ -30,7 +30,6 @@ const Home: React.FC<Props> = ({navigation}) => {
       .then((response) => response.data)
       .then((response: CharacterList) => {
         const list = [...listCharacter, ...response.results];
-
         setListCharacter(list);
         setNextPage(nextPage + 1);
         setLoading(false);
@@ -44,8 +43,6 @@ const Home: React.FC<Props> = ({navigation}) => {
   };
 
   const showDetails = (_id: number) => {
-    console.warn('_id', _id);
-    // props.navigation.navigate('DetailCharacter', {id: _id});
     navigation.navigate('DetailCharacter', {id: _id});
   };
 
@@ -62,9 +59,7 @@ const Home: React.FC<Props> = ({navigation}) => {
     );
   };
 
-  const _renderFooter = () => {
-    return <LoadingFooter loading={loadingFooter} />;
-  };
+  const _renderFooter = <LoadingFooter loading={loadingFooter} />;
 
   return (
     <>

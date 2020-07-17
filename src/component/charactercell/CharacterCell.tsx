@@ -1,8 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View, Text, Image, TouchableHighlight } from 'react-native';
-import { styles } from './CharacterCell.style';
+import { TouchableHighlight } from 'react-native';
+import { Container,ContainerElement,ImageCharacter,TextName} from './CharacterCell.style';
 import PropTypes from 'prop-types';
 
 const  CharacterCell = (props) =>{
@@ -10,24 +10,18 @@ const  CharacterCell = (props) =>{
         props.onPress(props.id);
     };
 
-        const { sourceImage, name } = props;
-        const { container, image, textName, containerElement } = styles;
-        return (
-            <View style={container}>
-                <TouchableHighlight underlayColor={'transparent'} onPress={_detailCharacter}>
-                    <View style={containerElement}>
-                        <Image
-                            source={{ uri: sourceImage }}
-                            resizeMode="contain"
-                            style={image}
+    const { sourceImage, name } = props;
 
-                        />
-                        <Text style={textName}>{name}</Text>
-                    </View>
-                </TouchableHighlight>
-            </View>
-        );
-
+    return (
+        <Container>
+             <TouchableHighlight underlayColor={'transparent'} onPress={_detailCharacter}>
+                <ContainerElement>
+                    <ImageCharacter source={{ uri: sourceImage }}/>
+                    <TextName >{name}</TextName>
+                </ContainerElement>
+            </TouchableHighlight>
+        </Container>
+    );
 };
 
 export default CharacterCell;
