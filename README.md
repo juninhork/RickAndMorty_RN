@@ -6,12 +6,12 @@ Feito Com
 
 Abaixo segue o que foi utilizado na criação deste template:
 
-    - **React Native** - O React Native é um framework que permite o desenvolvimento - de aplicações mobile usando Javascript e React;
-    - **React Navigation** - O React Navigation surgiu da necessidade comunidade do - React Native de uma navegação de forma fácil de se usar em Typescript;
-    - **React Native** Gesture Handler - API declarativa que permite a manipulação de toques e gestos no React Native;
-    - **Axios** - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
-    - **Prop Types** - Verificação de tipo em tempo de execução para propriedades (props) React e objetos semelhantes;
-    - **Folder View** - Componente de compactação de informação;
+    - React Native - O React Native é um framework que permite o desenvolvimento - de aplicações mobile usando Javascript e React;
+    - React Navigation - O React Navigation surgiu da necessidade comunidade do - React Native de uma navegação de forma fácil de se usar em Typescript;
+    - React Native Gesture Handler - API declarativa que permite a manipulação de toques e gestos no React Native;
+    - Axios - O Axios é um cliente HTTP baseado em Promises para Browser e NodeJS;
+    - Prop Types - Verificação de tipo em tempo de execução para propriedades (props) React e objetos semelhantes;
+    - Folder View - Componente de compactação de informação;
 
 Native;
 
